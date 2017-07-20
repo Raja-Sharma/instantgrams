@@ -1,9 +1,9 @@
 class Header extends React.Component {
   render() {
     return(
-      <header className="main-header">
+      <div className="main-header">
         InstantGrams
-      </header>
+      </div>
     )
   }
 }
