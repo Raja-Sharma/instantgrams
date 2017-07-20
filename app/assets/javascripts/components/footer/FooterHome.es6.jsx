@@ -1,1 +1,7 @@
-FooterHome.es6.jsx
+class FooterHome extends React.Component {
+  render() {
+    return(
+
+    )
+  }
+}

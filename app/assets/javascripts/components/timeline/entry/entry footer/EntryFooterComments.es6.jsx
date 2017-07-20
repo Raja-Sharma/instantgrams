@@ -1,1 +1,7 @@
-EntryFooterComments.es6.jsx
+class EntryFooterComments extends React.Component {
+  render() {
+    return(
+
+    )
+  }
+}
