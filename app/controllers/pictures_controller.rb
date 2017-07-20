@@ -25,7 +25,6 @@ class PicturesController < ApplicationController
       include: { commenter: {
         only: :username } },
       only: :body } })
-      binding.pry
 
     # combine likes and comments data
     data = {pic_comment_data: comments, pic_likes_data: likes}
