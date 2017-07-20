@@ -7,7 +7,9 @@ end
 gem 'pry-rails', :group => :development
 gem 'react-rails'
 gem 'paperclip', '~> 5.0.0'
-gem 'aws-sdk', '~> 2.3.0'
+gem 'aws-sdk'
+gem 'faker'
+gem 'dotenv-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
