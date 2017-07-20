@@ -2,7 +2,7 @@ class FooterCurrentUser extends React.Component {
   render() {
     return(
       <div className="footer-item">
-        profile
+        <a href="/users/{user.id}">profile</a>
       </div>
     )
   }
