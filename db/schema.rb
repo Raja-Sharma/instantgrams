@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20170720142450) do
   enable_extension "plpgsql"
 
   create_table "comments", force: :cascade do |t|
-    t.string "body", null: false
+    t.text "body", null: false
     t.integer "user_id", null: false
     t.integer "picture_id", null: false
     t.datetime "created_at", null: false
@@ -26,6 +26,16 @@ ActiveRecord::Schema.define(version: 20170720142450) do
   create_table "likes", force: :cascade do |t|
     t.integer "user_id"
     t.integer "picture_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username", null: false
+    t.string "avatar_file_name", null: false
+    t.string "avatar_content_type", null: false
+    t.integer "avatar_file_size", null: false
+    t.datetime "avatar_updated_at", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
