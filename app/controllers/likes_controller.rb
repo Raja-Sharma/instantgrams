@@ -6,14 +6,22 @@ class LikesController < ApplicationController
 
   def create
     @like = Like.new(like_params)
+    @picture = Picture.find_by(id: @like.picture_id)
+
+    if @like.save
+      redirect_to @picture
+    else
+      @errors = @like.errors.full_messages
+      render status: 422, action: new
+    end
   end
 
   def destroy
     @like = Like.find_by(id: params[:id])
-    @photo = Photo.find_by(id: @like.picture_id)
+    @picture = Picture.find_by(id: @like.picture_id)
     @like.destroy
 
-    redirect_to @photo
+    redirect_to @picture
   end
 
   private
