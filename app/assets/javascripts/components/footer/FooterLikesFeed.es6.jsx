@@ -1,8 +1,8 @@
 class FooterLikesFeed extends React.Component {
   render() {
     return(
-      <div>
-        alksjhdr
+      <div className="footer-item">
+        likes
       </div>
     )
   }
