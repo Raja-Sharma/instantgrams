@@ -16,10 +16,11 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
 
     if @comment.save
-      @photo = Photo.find(@comment.photo_id)
-      redirect_to @photo
+      @picture= Picture.find(@comment.picture_id)
+      redirect_to @picture
     else
-      render 'new'
+      @errors = @comment.errors.full_messages
+      render status: 422, action: :new
     end
   end
 
@@ -27,19 +28,20 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
 
     if @comment.update(comment_params)
-      @photo = Photo.find(@comment.photo_id)
-      redirect_to @photo
+      @picture = Picture.find(@comment.picture_id)
+      redirect_to @picture
     else
-      render 'edit'
+      @errors = @comment.errors.full_messages
+      render status: 422, action: :edit
     end
   end
 
   def destroy
     @comment = Comment.find(params[:id])
-    @photo = Photo.find(@comment.photo_id)
+    @picture = Picture.find(@comment.picture_id)
     @comment.destroy
 
-    redirect_to @photo
+    redirect_to @picture
   end
 
   private
