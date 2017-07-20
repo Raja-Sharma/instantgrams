@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'photo#index'
+  root 'pictures#index'
 
   resources :users, except: [:index, :destroy, :update, :edit]
   resources :pictures do
