@@ -1,8 +1,8 @@
 class EntryFooterLinksLike extends React.Component {
   render() {
     return(
-      <div>
-        alksjhdr
+      <div className="entry-footer-links-item">
+        like
       </div>
     )
   }

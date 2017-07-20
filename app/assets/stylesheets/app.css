@@ -1,9 +1,8 @@
 .main-header {
   position: fixed;
-  background: #55ACEE;
+  background: MintCream;
   height: 20px;
   width: 100%;
-  min-width: 768px;
   top: 0;
   left: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
@@ -14,10 +13,9 @@
 
 .main-footer {
   position: fixed;
-  background: #55ACEE;
+  background: MintCream;
   height: 20px;
   width: 100%;
-  min-width: 768px;
   bottom: 0;
   left: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -31,4 +29,85 @@
   float: center;
   width: 15%;
   text-align: center
+}
+
+.timeline {
+  margin-top: 20px;
+  max-width: 600px;
+  width: 50vw;
+  float: center;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.entry {
+  margin-bottom: 25px;
+}
+
+.entry-header {
+  height: 17px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: MintCream;
+  width: 50vw;
+  text-align: left;
+  max-width: 600px;
+}
+
+.entry-footer {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: MintCream;
+  text-align: left;
+  width: 50vw;
+  padding-bottom: 4px;
+  max-width: 600px;
+}
+
+.entry-footer-timestamp {
+  font-size: xx-small;
+  padding-left: 12px;
+}
+
+.entry-footer-links {
+  font-size: x-small;
+  padding-left: 12px;
+}
+
+.entry-footer-likes {
+  font-size: x-small;
+  padding-left: 12px;
+}
+
+.entry-footer-links-item {
+  margin: none;
+  display: inline-block;
+  float: center;
+  width: 10%;
+  text-align: center
+}
+
+.entry-footer-comments {
+  font-size: x-small;
+  padding-left: 12px;
+}
+
+.entry-footer-caption {
+  font-size: x-small;
+  padding-left: 12px;
+}
+
+.entry-footer-comment {
+  font-size: x-small;
+}
+
+.entry-picture {
+  border: solid black 1px;
+  /*height: 590px;*/
+  max-width: 600px;
+  width: 50vw;
+  height: 50vw;
+  text-align: center;
+  /*margin: 10px;*/
+
 }
