@@ -1,16 +1,20 @@
 class UsersController < ApplicationController
-  def index
-  end
-
   def show
+    @user = User.find_by(id: params[:id])
   end
 
   def new
+    @user = User.new
   end
 
   def create
-  end
+    @user = User.new(params[:user])
 
-  def edit
+    if @user.save
+      redirect_to @user
+    else
+      @errors = @user.errors.full_messages
+      render status: 422, action: new
+    end
   end
 end
