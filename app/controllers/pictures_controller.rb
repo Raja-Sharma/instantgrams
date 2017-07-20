@@ -1,18 +1,37 @@
 class PicturesController < ApplicationController
   def index
+    # get a collection of all the picture objects
     picture = Picture.all
+
+    # get the image urls for every picture in the db
     urls = picture.map do |pic|
       pic.image.url
     end
+
+    # get all the likes data for every picture
     likes = picture.as_json(include: { likes: {
-      include: :liker
-      }})
+      include: { liker: {
+        only: :username } },
+      only: :picture_id} })
+
+    # iterate over the likes array adding url data to each picture data set
+    likes.each do |picture|
+      index = picture["id"] - 1
+      picture["url"] = urls[index]
+    end
+
+    # get all the comments data for every picture
     comments = picture.as_json(include: { comments: {
-      include: :commenter
-      }})
+      include: { commenter: {
+        only: :username } },
+      only: :body } })
       binding.pry
-    blah = {comments: comments, likes: likes}
-    render json: blah
+
+    # combine likes and comments data
+    data = {pic_comment_data: comments, pic_likes_data: likes}
+
+    # send it!
+    render json: data
   end
 
   def test
