@@ -1,11 +1,16 @@
 class PicturesController < ApplicationController
   def index
     picture = Picture.find(1)
-    picture = picture.as_json(include: { comments: {
+    likes = picture.as_json(include: { likes: {
+      include: :liker
+      }})
+    url = picture.image.url
+    comments = picture.as_json(include: { comments: {
       include: :commenter
-      }}
-      )
-    render json: picture
+      }})
+    blah = {pictures: comments, likes: likes}
+    blah[:url] = url
+    render json: blah
   end
   #
   # def show
