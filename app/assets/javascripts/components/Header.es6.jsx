@@ -3,7 +3,7 @@ class Header extends React.Component {
     return(
       <header className="main-header">
         InstantGrams
-      <header />
+      </header>
     )
   }
 }

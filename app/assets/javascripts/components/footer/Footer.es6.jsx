@@ -3,7 +3,7 @@ class Footer extends React.Component {
     return(
       <footer className="main-footer">
         FOOTER!
-      <footer />
+      </footer>
     )
   }
 }
