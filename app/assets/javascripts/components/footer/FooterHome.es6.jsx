@@ -1,8 +1,8 @@
 class FooterHome extends React.Component {
   render() {
     return(
-      <div>
-        alksjhdr
+      <div className="footer-item">
+        home
       </div>
     )
   }

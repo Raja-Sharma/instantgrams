@@ -1,8 +1,8 @@
 class FooterEntryNew extends React.Component {
   render() {
     return(
-      <div>
-        alksjhdr
+      <div className="footer-item">
+        new post
       </div>
     )
   }

@@ -1,8 +1,8 @@
 class FooterSearch extends React.Component {
   render() {
     return(
-      <div>
-        alksjhdr
+      <div className="footer-item">
+        search
       </div>
     )
   }

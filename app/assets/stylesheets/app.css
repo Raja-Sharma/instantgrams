@@ -1,7 +1,7 @@
 .main-header {
   position: fixed;
   background: #55ACEE;
-  height: 50px;
+  height: 20px;
   width: 100%;
   min-width: 768px;
   top: 0;
@@ -9,17 +9,26 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   text-align: center;
   z-index: 2;
+  margin: auto;
 }
 
 .main-footer {
   position: fixed;
   background: #55ACEE;
-  height: 50px;
+  height: 20px;
   width: 100%;
   min-width: 768px;
-  bottom: 100%;
+  bottom: 0;
   left: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   text-align: center;
   z-index: 2;
+}
+
+.footer-item {
+  margin: none;
+  display: inline-block;
+  float: center;
+  width: 15%;
+  text-align: center
 }
