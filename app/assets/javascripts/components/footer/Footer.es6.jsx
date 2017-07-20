@@ -1,9 +1,9 @@
 class Footer extends React.Component {
   render() {
     return(
-      <footer className="main-footer">
+      <div className="main-footer">
         FOOTER!
-      </footer>
+      </div>
     )
   }
 }
