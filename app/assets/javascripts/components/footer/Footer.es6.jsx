@@ -11,3 +11,8 @@ class Footer extends React.Component {
     )
   }
 }
+
+// add logic:
+// if (not logged in) {
+//   components: Home, Register, Login
+// } else { see: above }

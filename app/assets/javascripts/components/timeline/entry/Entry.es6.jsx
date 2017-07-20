@@ -1,8 +1,10 @@
 class Entry extends React.Component {
   render() {
     return(
-      <div>
-        alksjhdr
+      <div className='entry'>
+        <EntryHeader />
+        <EntryPicture />
+        <EntryFooter />
       </div>
     )
   }

@@ -1,8 +1,8 @@
 class EntryFooterTimestamp extends React.Component {
   render() {
     return(
-      <div>
-        alksjhdr
+      <div className="entry-footer-timestamp">
+        93 second ago
       </div>
     )
   }
