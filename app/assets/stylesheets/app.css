@@ -1,0 +1,25 @@
+.main-header {
+  position: fixed;
+  background: #55ACEE;
+  height: 50px;
+  width: 100%;
+  min-width: 768px;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  text-align: center;
+  z-index: 2;
+}
+
+.main-footer {
+  position: fixed;
+  background: #55ACEE;
+  height: 50px;
+  width: 100%;
+  min-width: 768px;
+  bottom: 100%;
+  left: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  text-align: center;
+  z-index: 2;
+}
