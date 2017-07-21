@@ -1,15 +1,27 @@
 class Timeline extends React.Component {
   render() {
-
     return(
-      <div className="timeline">
-        <Entry />
-        <Entry />
+
+      <div className="user-show">
+        <UserShowPicture />
+        <UserShowPicture />
+        <UserShowPicture />
+        <UserShowPicture />
+        <UserShowPicture />
+        <UserShowPicture />
+        <UserShowPicture />
+        <UserShowPicture />
+        <UserShowPicture />
+        <UserShowPicture />
       </div>
     )
   }
 }
 
+    //  <div className="timeline">
+    //    <Entry />
+    //    <Entry />
+    //  </div>
 
 
         // {
