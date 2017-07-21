@@ -3,9 +3,9 @@ class Entry extends React.Component {
     picture = this.props.picture
     return(
       <div className='entry'>
-        <EntryHeader />
-        <EntryPicture picture={picture} />
-        <EntryFooter />
+        <EntryHeader username={picture.poster}/>
+        <EntryPicture url={picture.url} />
+        <EntryFooter picture={picture}/>
       </div>
     )
   }
