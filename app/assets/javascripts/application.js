@@ -16,3 +16,7 @@
 //= require react_ujs
 //= require components
 //= require_tree .
+
+$( document ).ready(function() {
+    console.log( "from application.js" );
+});
