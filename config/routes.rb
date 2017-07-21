@@ -6,5 +6,4 @@ Rails.application.routes.draw do
     resources :likes, only: [:create, :new, :destroy]
     resources :comments, except: [:show]
   end
-  get "/test" => "pictures#test"
 end
