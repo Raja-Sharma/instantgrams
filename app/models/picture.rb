@@ -51,4 +51,8 @@ class Picture < ApplicationRecord
       "#{numb_comments} comments"
     end
   end
+
+  def post_time
+    self.updated_at.strftime("%B %d, %Y")
+  end
 end

@@ -3,7 +3,7 @@ class Entry extends React.Component {
     picture = this.props.picture
     return(
       <div className='entry'>
-        <EntryHeader />
+        <EntryHeader username={picture.poster}/>
         <EntryPicture picture={picture} />
         <EntryFooter picture={picture}/>
       </div>
