@@ -1,3 +1,3 @@
 class Users::ShowSerializer < UserSerializer
-  root 'user'
+  root "user"
 end
