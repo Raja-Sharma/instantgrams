@@ -109,5 +109,17 @@
   height: 50vw;
   text-align: center;
   /*margin: 10px;*/
+}
 
+.user-show {
+
+}
+
+.user-show-picture {
+  width: 30vw;
+  height: 30vw;
+  /*padding-bottom: 30%;*/
+  border: solid black 1px;
+  text-align: center;
+  float: left;
 }
