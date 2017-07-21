@@ -1,5 +1,4 @@
 class Timeline extends React.Component {
-
   render() {
     let Pictures = this.props.pictures
     return(

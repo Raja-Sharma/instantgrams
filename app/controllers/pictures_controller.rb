@@ -4,6 +4,9 @@ class PicturesController < ApplicationController
     render json: picture
   end
 
+  def root
+    render '/index'
+  end
   # def show
   #   @picture = Picture.find_by(id: params[:id])
   # end
