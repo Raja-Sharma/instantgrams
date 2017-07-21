@@ -1,10 +1,12 @@
 class Timeline extends React.Component {
+
   render() {
+    let Pictures = this.props.pictures
     return(
       {
         Pictures.map( (picture, i) =>
-        <Entry data={picture} key={i} />
-      }
+        <Entry picture={picture} key={i} />
+      )}
     )
   }
 }
