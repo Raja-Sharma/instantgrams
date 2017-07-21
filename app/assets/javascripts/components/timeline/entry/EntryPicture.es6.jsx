@@ -3,7 +3,7 @@ class EntryPicture extends React.Component {
     let url = this.props.url
     return(
       <div className='entry-picture'>
-        <image src={url} />
+        <img src={url} />
       </div>
     )
   }
