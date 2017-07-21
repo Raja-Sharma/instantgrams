@@ -17,4 +17,34 @@ class Picture < ApplicationRecord
     {:bucket => ENV['S3_BUCKET_NAME'], :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'], :s3_region => ENV['AWS_REGION']}
   end
+
+  def url
+    self.image.url
+  end
+
+  def poster
+    self.user.username
+  end
+
+  def num_likes
+    likes = self.likes.length
+    if likes  == 0
+      "Be the first to like this picture!"
+    elsif likes == 1
+      "1 like"
+    else
+      "#{likes} likes"
+    end
+  end
+
+ def num_comments
+    numb_comments = self.comments.length
+    if numb_comments  == 0
+      "Be the first to comment on this picture!"
+    elsif numb_comments == 1
+      "1 comment"
+    else
+      "#{numb_comments} comments"
+    end
+  end
 end
