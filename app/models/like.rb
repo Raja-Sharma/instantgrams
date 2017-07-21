@@ -3,4 +3,8 @@ class Like < ApplicationRecord
   belongs_to :picture
 
   validates :user_id, :picture_id, presence: true
+
+  def liker_name
+    self.liker.username
+  end
 end
