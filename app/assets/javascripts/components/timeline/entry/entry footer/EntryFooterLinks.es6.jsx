@@ -1,10 +1,10 @@
 class EntryFooterLinks extends React.Component {
   render() {
-    // debugger
+    let pic = this.props
     return(
       <div className="entry-footer-links">
         <EntryFooterLinksLike />
-        <EntryFooterLinksComment />
+        <EntryFooterLinksComment data ={ pic}/>
       </div>
     )
   }
