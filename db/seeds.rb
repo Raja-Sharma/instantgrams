@@ -7,9 +7,24 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # User.destroy_all
-# 10.times do
-  User.create(
-    username: Faker::Name,
+10.times do
+  user = User.create(
+    username: Faker::Name.name,
     avatar: File.new("app/assets/images/stock_photos/artsy_guy.jpeg")
   )
-# end
+  3.times do
+    pic = user.pictures.create(
+      caption: Faker::Lorem.sentence,
+      image: File.new("app/assets/images/stock_photos/baby.jpeg")
+    )
+    10.times do
+      pic.comments.create(
+        body: Faker::Lorem.sentence,
+        user_id: rand(1..10)
+      )
+      pic.likes.create(
+        user_id: rand(1..10),
+      )
+    end
+  end
+end
