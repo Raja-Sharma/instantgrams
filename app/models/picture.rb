@@ -26,6 +26,10 @@ class Picture < ApplicationRecord
     self.user.username
   end
 
+  def poster_avatar_url
+    self.user.avatar_url
+  end
+
   def num_likes
     likes = self.likes.length
     if likes  == 0
