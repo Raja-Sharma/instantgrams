@@ -13,7 +13,7 @@ class App extends React.Component {
       url: "/pictures",
       method: 'get'
     }).done(function(response){
-      this.setState({pictures: response})
+      this.setState({pictures: response.pictures})
     }.bind(this));
   }
 
