@@ -4,7 +4,7 @@ class EntryFooter extends React.Component {
 
     return(
       <div className="entry-footer">
-        <EntryFooterLinks />
+        <EntryFooterLinks pic={picture}/>
         <EntryFooterLikes pic={picture} />
         <EntryFooterCaption pic={picture}/>
         <EntryFooterComments pic={picture}/>
