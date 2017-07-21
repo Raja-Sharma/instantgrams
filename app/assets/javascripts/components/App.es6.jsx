@@ -4,12 +4,13 @@ class App extends React.Component {
     this.state = {
       user: null,
       pictures: [],
+      page: "timeline"
     }
   }
 
-  ComponentDidMount() {
+  componentDidMount() {
     $.ajax({
-      url: "/",
+      url: "/pictures",
       method: 'get'
     }).done(function(response){
       this.setState({pictures: response})

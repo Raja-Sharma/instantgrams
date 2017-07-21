@@ -1,8 +1,7 @@
 class PicturesController < ApplicationController
   def index
     picture = Picture.all
-    @pictures = picture.as_json
-    render '/index'
+    render json: picture
   end
 
   def root
