@@ -1,8 +1,8 @@
 class EntryHeaderUsername extends React.Component {
   render() {
     return(
-      <div>
-        alksjhdr
+      <div className="footer-item">
+        {this.props.username}
       </div>
     )
   }
