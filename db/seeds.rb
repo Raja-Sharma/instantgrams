@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # User.destroy_all
+
 10.times do
   user = User.create(
     username: Faker::Name.name,
@@ -28,3 +29,4 @@
     end
   end
 end
+
