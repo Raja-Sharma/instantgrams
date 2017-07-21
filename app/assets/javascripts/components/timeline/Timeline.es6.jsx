@@ -1,19 +1,10 @@
 class Timeline extends React.Component {
   render() {
     return(
-
-      <div className="user-show">
-        <UserShowPicture />
-        <UserShowPicture />
-        <UserShowPicture />
-        <UserShowPicture />
-        <UserShowPicture />
-        <UserShowPicture />
-        <UserShowPicture />
-        <UserShowPicture />
-        <UserShowPicture />
-        <UserShowPicture />
-      </div>
+      {
+        Pictures.map( (picture, i) =>
+        <Entry data={picture} key={i} />
+      }
     )
   }
 }
@@ -23,8 +14,16 @@ class Timeline extends React.Component {
     //    <Entry />
     //  </div>
 
+    //  <div className="user-show">
+    //    <UserShowPicture />
+    //    <UserShowPicture />
+    //    <UserShowPicture />
+    //    <UserShowPicture />
+    //    <UserShowPicture />
+    //    <UserShowPicture />
+    //    <UserShowPicture />
+    //    <UserShowPicture />
+    //    <UserShowPicture />
+    //    <UserShowPicture />
+    //  </div>
 
-        // {
-        //   Pictures.map( (picture, i) =>
-        //   <Entry data={picture} key={i} />
-        // }
