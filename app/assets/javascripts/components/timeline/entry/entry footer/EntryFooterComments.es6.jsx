@@ -1,8 +1,9 @@
 class EntryFooterComments extends React.Component {
   render() {
     return(
-      <div>
-        alksjhdr
+      <div className="entry-footer-comments">
+        <EntryFooterCommentsComment />
+        <EntryFooterCommentsComment />
       </div>
     )
   }

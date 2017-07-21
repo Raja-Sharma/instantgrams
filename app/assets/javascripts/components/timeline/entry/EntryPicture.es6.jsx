@@ -1,8 +1,8 @@
 class EntryPicture extends React.Component {
   render() {
     return(
-      <div>
-        alksjhdr
+      <div className='entry-picture'>
+        picture
       </div>
     )
   }

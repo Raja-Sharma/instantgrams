@@ -1,8 +1,8 @@
 class EntryFooterCaption extends React.Component {
   render() {
     return(
-      <div>
-        alksjhdr
+      <div className="entry-footer-caption">
+        username: caption
       </div>
     )
   }
