@@ -18,12 +18,22 @@ class App extends React.Component {
   }
 
   render() {
-    return(
-      <div>
-        <Header />
-        <Timeline pictures={this.state.pictures}/>
-        <Footer user={this.state.user} />
-      </div>
-    )
+    if (this.state.page === "user") {
+      return(
+        <div>
+          <Header />
+          <UserShow pictures={this.state.pictures} />
+          <Footer user={this.state.user} />
+        </div>
+      )
+    } else if (this.state.page === "timeline") {
+      return(
+        <div>
+          <Header />
+          <Timeline pictures={this.state.pictures} />
+          <Footer user={this.state.user} />
+        </div>
+      )
+    }
   }
 }

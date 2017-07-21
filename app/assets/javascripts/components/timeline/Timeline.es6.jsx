@@ -10,21 +10,3 @@ class Timeline extends React.Component {
   }
 }
 
-    //  <div className="timeline">
-    //    <Entry />
-    //    <Entry />
-    //  </div>
-
-    //  <div className="user-show">
-    //    <UserShowPicture />
-    //    <UserShowPicture />
-    //    <UserShowPicture />
-    //    <UserShowPicture />
-    //    <UserShowPicture />
-    //    <UserShowPicture />
-    //    <UserShowPicture />
-    //    <UserShowPicture />
-    //    <UserShowPicture />
-    //    <UserShowPicture />
-    //  </div>
-

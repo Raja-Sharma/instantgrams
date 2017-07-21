@@ -1,8 +1,8 @@
 class Login extends React.Component {
   render() {
     return(
-      <div>
-        login
+      <div className="footer-item">
+        <a href='' id="login">login</a>
       </div>
     )
   }
