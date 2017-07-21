@@ -4,7 +4,7 @@ class Entry extends React.Component {
     return(
       <div className='entry'>
         <EntryHeader username={picture.poster}/>
-        <EntryPicture url={picture.url} />
+        <EntryPicture picture={picture} />
         <EntryFooter picture={picture}/>
       </div>
     )
