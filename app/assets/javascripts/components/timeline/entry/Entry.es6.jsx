@@ -5,7 +5,7 @@ class Entry extends React.Component {
       <div className='entry'>
         <EntryHeader />
         <EntryPicture picture={picture} />
-        <EntryFooter />
+        <EntryFooter picture={picture}/>
       </div>
     )
   }

@@ -1,8 +1,9 @@
 class EntryFooterLikes extends React.Component {
   render() {
+    let pic = this.props
     return(
       <div className="entry-footer-likes">
-        0 likes
+        <p> {pic.pic.picture.num_likes} </p>
       </div>
     )
   }
