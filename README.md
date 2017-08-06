@@ -1,24 +1,3 @@
-# README
+## Instantgrams
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Group project. Instagram clone using react-rails gem which allows interpolation of ReactJS component files in ERB view files.
